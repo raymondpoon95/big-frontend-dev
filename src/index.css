@@ -12,3 +12,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.links-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.links-container > a {
+  background-color: #009933;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: none;
+}
+
+.links-container > a:hover,
+.links-container > a.active {
+  background-color: #00b33c;
+  cursor: pointer;
+}
+
+.links-container > a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.code-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}

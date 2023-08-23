@@ -1,16 +1,44 @@
-import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, Outlet, useLocation } from "react-router-dom";
+import problemData from "../../Data/Data";
 
 const Home = () => {
+  const [selected, setSelected] = useState<number>(0);
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    if (pathname === "/") {
+      setSelected(0);
+      return;
+    }
+
+    const currentPage = problemData.findIndex(
+      (problem) => problem.link === pathname.replace("/", "")
+    );
+    setSelected(currentPage);
+  }, [pathname]);
+
   return (
     <>
-      <ul>
-        <Link to="/">Home</Link>
-      </ul>
-      <ul>
-        <Link to="reactCounterApp">React Counter App</Link>
-      </ul>
-      <Outlet />
+      <div className="links-container">
+        {problemData.map(({ link, description }, index) => {
+          const isActive = selected === index ? "active" : "";
+
+          return (
+            <Link
+              to={link}
+              key={index}
+              className={isActive}
+              onClick={() => setSelected(index)}
+            >
+              {description}
+            </Link>
+          );
+        })}
+      </div>
+      <div className="code-container">
+        <Outlet />
+      </div>
     </>
   );
 };
