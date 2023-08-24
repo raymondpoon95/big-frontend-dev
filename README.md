@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+This is a website created to hold solutions to the React problems that can be found on [bigfrontend.dev](https://bigfrontend.dev/react). The purpose is to create solutions to these problems and have these answers on a single platform.
+
+## 🚀 Getting started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
