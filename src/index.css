@@ -15,7 +15,6 @@ code {
 
 .links-container {
   display: flex;
-  width: 100%;
   flex-wrap: wrap;
   padding: 1rem;
   gap: 1rem;
@@ -43,8 +42,48 @@ code {
 
 .code-container {
   display: flex;
+  flex-direction: column;
   height: 100%;
-  width: 100%;
-  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+
+.code-display {
+  display: flex;
+  flex-direction: column;
+  background-color: #3a404d;
+  height: 100%;
+  overflow: auto;
+  border-radius: 8px;
+}
+
+.code-display__header-container {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 0.5rem;
+  color: white;
+}
+
+.code-display__header-container > button {
+  background: none;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.code-display__header-container > button:hover {
+  cursor: pointer;
+}
+
+.header-container__solution {
+  font-size: 0.875rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .code-container {
+    max-width: 800px;
+  }
 }
