@@ -11,6 +11,14 @@ const problemData = [
     link: "useTimeOut",
     description: "UseTimeOut",
   },
+  {
+    link: "useIsFirstRender",
+    description: "UseIsFirstRender",
+  },
+  {
+    link: "usePrevious",
+    description: "UsePrevious",
+  },
 ];
 
 export default problemData;
