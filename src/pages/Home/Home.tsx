@@ -36,6 +36,13 @@ const Home = () => {
           );
         })}
       </div>
+      {pathname === "/" && (
+        <p className="home-description">
+          This is a website created to hold solutions to the React problems that
+          can be found on bigfrontend.dev. The purpose is to create solutions to
+          these problems and have these answers on a single platform.
+        </p>
+      )}
       <div className="code-container">
         <Outlet />
       </div>
