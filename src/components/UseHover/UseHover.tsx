@@ -66,6 +66,7 @@ const UseHover = () => {
   const [ref, isHovered] = useHover<HTMLDivElement>();
   return (
     <>
+      <h1>UseHover</h1>
       <CodeDisplay code={useHoverCodeString} />
       <h1>Example</h1>
       <div ref={ref} style={{ border: "1px solid black", padding: "1rem" }}>

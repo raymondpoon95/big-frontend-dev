@@ -7,6 +7,8 @@ import UseIsFirstRender from "./components/UseIsFirstRender/UseIsFirstRender";
 import UsePrevious from "./components/UsePrevious/UsePrevious";
 import UseSWR from "./components/UseSWR/UseSWR";
 import UseHover from "./components/UseHover/UseHover";
+import UseToggle from "./components/UseToggle/UseToggle";
+import UseDebounce from "./components/UseDebounce/UseDebounce";
 
 const App = () => {
   return (
@@ -18,6 +20,8 @@ const App = () => {
         <Route path="usePrevious" element={<UsePrevious />} />
         <Route path="useSWR" element={<UseSWR />} />
         <Route path="useHover" element={<UseHover />} />
+        <Route path="useToggle" element={<UseToggle />} />
+        <Route path="useDebounce" element={<UseDebounce />} />
       </Route>
     </Routes>
   );

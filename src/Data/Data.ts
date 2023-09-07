@@ -28,12 +28,12 @@ const problemData = [
     description: "UseHover",
   },
   {
-    link: "useTimeOut",
-    description: "UseTimeOut",
+    link: "useToggle",
+    description: "UseToggle",
   },
   {
-    link: "useIsFirstRender",
-    description: "UseIsFirstRender",
+    link: "useDebounce",
+    description: "UseDebounce",
   },
   {
     link: "usePrevious",
