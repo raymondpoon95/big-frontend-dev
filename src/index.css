@@ -58,6 +58,7 @@ code {
   height: 100%;
   width: 90%;
   margin: auto;
+  margin-bottom: 2rem;
 }
 
 .code-display {
@@ -96,6 +97,6 @@ code {
 
 @media screen and (min-width: 1024px) {
   .code-container {
-    max-width: 800px;
+    max-width: 900px;
   }
 }

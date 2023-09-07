@@ -24,8 +24,8 @@ const problemData = [
     description: "UseSWR",
   },
   {
-    link: "reactCounterApp",
-    description: "React Counter App",
+    link: "useHover",
+    description: "UseHover",
   },
   {
     link: "useTimeOut",
